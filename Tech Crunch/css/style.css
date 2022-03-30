@@ -1,0 +1,100 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 0px 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav,
+main,
+aside,
+footer {
+  float: left;
+  width: 15%;
+}
+main {
+  width: 50%;
+}
+aside {
+  width: 35%;
+  list-style: none;
+}
+aside > ul {
+  list-style: none;
+  padding-right: 0.5rem;
+}
+footer {
+  width: 85%;
+  padding-bottom: 1.5rem;
+}
+div {
+  width: 33.3333%;
+  height: 10rem;
+  float: left;
+  border: 1px solid white;
+  /* border-left-width: 0.5rem; */
+  padding-right: 1rem;
+}
+nav * {
+  list-style: none;
+}
+nav li {
+  line-height: 2rem;
+}
+.search {
+  width: 10%;
+  height: auto;
+  padding: 0.5rem 0rem 0rem 0.5rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.navivi {
+  padding-bottom: 16rem;
+}
+footer > div + div {
+  margin-top: 18px;
+}
+.techcrunch {
+  width: 50%;
+  height: auto;
+}
+.headphoto {
+  width: 39rem;
+  height: 25rem;
+}
+.mid {
+  padding-right: 3rem;
+}
+.wonderwoman {
+  width: 20rem;
+  height: 10.2rem;
+  margin-top: 20px;
+}
+.donorr {
+  padding-right: 2rem;
+}
