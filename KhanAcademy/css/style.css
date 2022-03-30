@@ -1,0 +1,123 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: "Source Serif Pro", serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  width: 100%;
+  background: #eee;
+  padding: 0px 10px;
+  list-style: none;
+  border-bottom: 2px solid grey;
+}
+
+.bb {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.bb a {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 121, 240);
+}
+.bb form {
+  display: flex;
+  align-items: center;
+  padding-right: 150px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 121, 240);
+}
+
+nav img {
+  height: 60px;
+  width: auto;
+  padding: 0px 40px 0px 20px;
+  margin: 4px 0px;
+}
+
+.aa {
+  font-family: "Space Mono", monospace;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  color: rgb(31, 121, 240);
+}
+
+.aa .z {
+  padding-left: 200px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 121, 240);
+}
+.x,
+.y {
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(31, 121, 240);
+}
+main {
+  padding: 0 100px;
+}
+main > section {
+  width: 50%;
+  float: left;
+}
+main > section + section {
+  height: 100px;
+}
+section > img {
+  width: 70%;
+  height: 90%;
+  margin-top: 20px;
+}
+.underline {
+  width: 60%;
+}
+
+main > section h1 {
+  margin-top: 120px;
+  padding-right: 0px;
+  font-size: 65px;
+}
+section > a {
+  border: 8px solid rgb(31, 121, 240);
+  background-color: rgb(31, 121, 240);
+  color: white;
+  display: inline;
+  text-decoration: none;
+  border-radius: 10%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
