@@ -1,0 +1,182 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 0rem 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  font-family: "Open Sans", sans-serif;
+  height: 40px;
+  background: black;
+}
+nav * {
+  font-family: "Open Sans", sans-serif;
+  float: left;
+  width: 7%;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0px 1px 0px;
+}
+header > form {
+  padding: 7px 0px 1px 0px;
+}
+.si {
+  margin-left: 2rem;
+  width: 1.5rem;
+  height: auto;
+}
+.se {
+  margin-left: 1rem;
+  width: 5rem;
+  height: auto;
+}
+nav form input {
+  width: 14rem;
+  text-align: left;
+}
+main + section > section {
+  width: 33.3333%;
+  height: 25rem;
+  float: left;
+  border: 1px solid white;
+  border-left-width: 0.5rem;
+  padding-right: 1rem;
+}
+main > h2 {
+  width: 100%;
+  float: left;
+}
+main > h2 > span {
+  float: right;
+  color: rgb(110, 110, 110);
+}
+/*Main headline*/
+main > section {
+  width: 50%;
+  height: 361px;
+  float: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  position: relative;
+}
+/*Four small headlines*/
+main section + section section {
+  width: 50%;
+  height: 180px;
+  float: left;
+  border-left: 0.5rem solid white;
+  padding-left: 0.5rem;
+}
+/*News Section Dividing line*/
+section h2 {
+  float: left;
+  padding-left: 2px;
+  border-left: 3px solid red;
+  width: 100%;
+}
+/*Mini headline*/
+section > span {
+  float: left;
+  padding-left: 0.3rem;
+  border-left: 3px solid red;
+  width: 100%;
+}
+
+section > div > span {
+  float: left;
+  padding-left: 0.3rem;
+  border-left: 3px solid red;
+  width: 100%;
+}
+
+/*images*/
+.israel {
+  background: url("../images/israel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right-width: 0.5rem solid white;
+}
+.americans {
+  background-image: url("../images/Americans.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0.5rem solid white;
+  border-right-width: 0.5rem;
+}
+.vaccine {
+  background-image: url("../images/Vaccine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0.5rem solid white;
+  border-right: -0.5rem solid white;
+}
+.productivity {
+  background-image: url("../images/productivity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right-width: 0.5rem;
+}
+.singer {
+  background-image: url("../images/singer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Joe {
+  background-image: url("../images/Joe.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -0.5rem;
+}
+.Women {
+  background-image: url("../images/Women.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Trump {
+  background-image: url("../images/trump.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.description {
+  margin: 16rem 0 0 0rem;
+}
+.bot {
+  margin: 5rem 0 0 0rem;
+}
+.is {
+  margin: 14rem 0 0 0rem;
+  padding-right: 1rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
